@@ -1,0 +1,51 @@
+.weather-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon i {
+  color: #4885ed;
+}
+
+/* Icon sizes */
+.weather-icon-small i {
+  font-size: 1.5rem;
+}
+
+.weather-icon-medium i {
+  font-size: 2.5rem;
+}
+
+.weather-icon-large i {
+  font-size: 4rem;
+}
+
+/* Color variations based on weather */
+.weather-icon i.fa-sun {
+  color: #f9d71c;
+}
+
+.weather-icon i.fa-cloud-sun {
+  color: #e8c870;
+}
+
+.weather-icon i.fa-cloud {
+  color: #b1c5db;
+}
+
+.weather-icon i.fa-cloud-rain {
+  color: #6ba1cc;
+}
+
+.weather-icon i.fa-bolt {
+  color: #ffb031;
+}
+
+.weather-icon i.fa-snowflake {
+  color: #b1e5fa;
+}
+
+.weather-icon i.fa-wind {
+  color: #89a5b8;
+}

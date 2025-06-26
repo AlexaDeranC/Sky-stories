@@ -1,0 +1,91 @@
+.weather-form-container {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.weather-form {
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 999px;
+  overflow: hidden;
+  background: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 16px 24px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  border-radius: 999px 0 0 999px;
+  font-family: 'Chicle', serif;
+  background-color: #fdf4ff; /* soft lavender */
+  color: #4c1d95; /* deep purple text */
+}
+
+.input-group input::placeholder {
+  color: #a78bfa; /* pastel purple placeholder */
+  opacity: 0.8;
+}
+
+.input-group input.error {
+  background-color: #fff1f2; /* soft pink error bg */
+  border: 2px dashed #fca5a5; /* pink error border */
+  color: #65a30d;
+}
+
+.input-group button {
+  background-color: #c4b5fd; /* pastel purple */
+  color: white;
+  border: none;
+  padding: 0 28px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1rem;
+  border-radius: 0 999px 999px 0;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 0 0 #a78bfa;
+}
+
+.input-group button:hover {
+  background-color: #a78bfa; /* deeper lavender */
+  transform: scale(1.05);
+  box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #e11d48;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: 'Chicle', serif;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .input-group input {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+
+  .input-group button {
+    padding: 14px;
+    border-radius: 0 0 20px 20px;
+    justify-content: center;
+    width: 100%;
+  }
+}

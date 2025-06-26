@@ -1,0 +1,89 @@
+.header {
+  background: linear-gradient(135deg, #fbcfe8, #c4b5fd, #bbf7d0, #a5f3fc);
+  padding: 2.5rem 0;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  animation: gentle-glow 10s ease-in-out infinite alternate;
+}
+
+@keyframes gentle-glow {
+  0% {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+  100% {
+    box-shadow: 0 4px 30px rgba(192, 132, 252, 0.3);
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.nav-link {
+font-family: "Montserrat Alternates", sans-serif;
+font: weight 300px; ;
+ color: #9333ea; /* playful purple */
+  background-color: #fbcfe8; /* soft pink bubble */
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.nav-link:hover {
+  background-color: #c4b5fd; /* lavender hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 600px) {
+  .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header-title h1 {
+  font-family: "Ranchers", sans-serif;
+  font-size: 3rem;
+  color: #9333ea; /* playful purple */
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.header-title p {
+  font-family: "Chicle", serif;
+  font-size: 1.3rem;
+  color: #65a30d; /* cute leafy green */
+  margin-top: 0.5rem;
+  opacity: 0.95;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .header-title p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
